@@ -1,8 +1,3 @@
-r# Console Architecture & Design
-
-Date: 2025-09-22
-Status: Draft (Merged High-Level Design + ADR 0001)
-
 ## 1. Overview
 The **Console** service provides secure remote management capabilities for Intel® AMT-enabled devices via a Go-based backend. It exposes REST APIs (and select WebSocket endpoints) abstracting Intel AMT WS-MAN operations (power control, inventory, configuration, KVM enablement). The service integrates with a persistence layer (SQLite for local development, PostgreSQL for production) and implements JWT-based authentication, structured logging, and auditable operation tracking.
 
